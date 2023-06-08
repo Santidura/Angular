@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="cuerpo">
+    <nav class="navbar navbar-expand-lg navbar-ligth bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.youtube.com/">Muisiquita</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          </div>
+        </div>
+      </nav>
+    <div class="conatiner mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-5" *ngFor="let product of products">
+                <div class="card" style="width: 18rem; height: 600px; ">
+                    <img src="{{product.image}}" class="card-img-top" style="height: 300px; width: 286  px;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{product.title}}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">{{product.category}}</li>
+                      <li class="list-group-item">{{product.price}}</li>
+                      <li class="list-group-item">{{product.rating.rate}}</li>
+                    </ul>
+                  </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.card{
+    background-color: rgb(61, 61, 61);
+    color: aliceblue;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cuerpo{
+    background-color: rgb(122, 122, 122);
+}
+nav{
+    display:flex;
+    justify-content: center;
+}
